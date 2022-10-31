@@ -52,6 +52,7 @@ public class ExperienceController {
             return new ResponseEntity(new Message("El Nombre es requerido"), HttpStatus.BAD_REQUEST);
 
         Experience experience = experienceService.getOne(id).get();
+
         experience.setName(experienceDTO.getName());
         experience.setDateStart(experienceDTO.getDateStart());
         experience.setDateEnd(experienceDTO.getDateEnd());

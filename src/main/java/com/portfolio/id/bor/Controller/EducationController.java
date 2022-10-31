@@ -52,6 +52,7 @@ public class EducationController {
             return new ResponseEntity(new Message("El Título es requerido"), HttpStatus.BAD_REQUEST);
 
         Education education = educationService.getOne(id).get();
+
         education.setDegree(educationDTO.getDegree());
         education.setDateEnd(educationDTO.getDateEnd());
         education.setDescription(educationDTO.getDescription());
