@@ -9,8 +9,8 @@ import java.util.Optional;
 @Repository
 public interface IEducationRepository extends JpaRepository<Education, Long> {
 
-    public Optional<Education> findByDegree(String degree);
+    Optional<Education> findByDegree(String degree);
 
-    public boolean existsByDegree(String degree);
+    boolean existsByDegree(String degree);
 
 }

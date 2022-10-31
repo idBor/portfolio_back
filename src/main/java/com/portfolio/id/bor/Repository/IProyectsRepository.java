@@ -8,7 +8,7 @@ import java.util.Optional;
 
 @Repository
 public interface IProyectsRepository extends JpaRepository<Proyects, Long> {
-    public Optional<Proyects> findByName(String name);
+    Optional<Proyects> findByName(String name);
 
-    public boolean existsByName(String name);
+    boolean existsByName(String name);
 }

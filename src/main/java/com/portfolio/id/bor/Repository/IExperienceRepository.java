@@ -9,7 +9,7 @@ import java.util.Optional;
 @Repository
 public interface IExperienceRepository extends JpaRepository<Experience, Long> {
 
-    public Optional<Experience> findByName(String name);
+    Optional<Experience> findByName(String name);
 
-    public boolean existsByName(String name);
+    boolean existsByName(String name);
 }

@@ -10,5 +10,5 @@ import java.util.Optional;
 public interface ISkillsRepository extends JpaRepository<Skills, Long> {
     Optional<Skills> findByName(String name);
 
-    public boolean existsByName(String name);
+    boolean existsByName(String name);
 }
